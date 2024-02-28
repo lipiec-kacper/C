@@ -1,6 +1,8 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "Strcasecmp.C": "cpp"
+        "Strcasecmp.C": "cpp",
+        "Palindrome.C": "cpp",
+        "ReadingArguments.C": "cpp"
     }
 }
