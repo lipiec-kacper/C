@@ -3,6 +3,8 @@
     "files.associations": {
         "Strcasecmp.C": "cpp",
         "Palindrome.C": "cpp",
-        "ReadingArguments.C": "cpp"
+        "ReadingArguments.C": "cpp",
+        "SwapInt.C": "cpp",
+        "SwapFraction.C": "cpp"
     }
 }
