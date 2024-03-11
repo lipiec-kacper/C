@@ -6,7 +6,7 @@ struct fract_t{
 };
 
 void swap(struct fract_t *a, struct fract_t *b){
-
+    
     int temp_numerator = a->numerator;
     a->numerator = b->numerator;
     b->numerator = temp_numerator;
