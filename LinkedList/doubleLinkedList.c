@@ -49,12 +49,7 @@ int delete_node(int data, struct node *node){
   while(current->data != data){
     current = current->next;
   }
-
-  if(current->prev == NULL){
-    current = current->next;
-    current->prev = NULL;
-  }
-
+  printf("%d deleted \n", current->data);
   current = current->prev;
   current->next = current->next->next;
   return 0;
@@ -65,12 +60,11 @@ int main(){
   head->prev = NULL;
   head->next = NULL;
   
-  insert_new_node(10, head);
   insert_new_node(20, head);
   insert_new_node(30, head);
   insert_new_node(40, head);
   insert_new_node(50, head);
-  delete_node(10, head);
+  delete_node(30, head);
   print_list(head);
   return 0;
 }
