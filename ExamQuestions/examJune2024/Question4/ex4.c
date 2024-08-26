@@ -3,8 +3,8 @@
 #include <string.h>
 
 struct fraction {
-   int numerateur;
-   int denominateur;
+  int numerateur;
+  int denominateur;
 };
 /*
  * @pre f1!=NULL, f2!=NULL
@@ -14,18 +14,18 @@ struct fraction {
  */
 struct fraction * addition(struct fraction *f1, struct fraction *f2){
   if(f1 == NULL || f2 == NULL){
-    return;
+    return NULL;
   }
 
   struct fraction *result = malloc(2 * sizeof(int));
   if(result == NULL){
-    return;
+    return NULL;
   }
   int result_nume = (f1->numerateur * f2->denominateur) + (f2->numerateur * f1->denominateur);
   int result_deno = f1->denominateur * f2->denominateur;
 
-  result->numerateur = result_nume;
+        result->numerateur = result_nume;
   result->denominateur = result_deno;
 
-  return result;
+return result;
 }
